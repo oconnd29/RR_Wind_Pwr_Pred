@@ -6,142 +6,109 @@ Download the data required for the tutorial here:
 
 https://zenodo.org/records/15799719
 
+---
 
-{
- "cells": [
-  {
-   "cell_type": "markdown",
-   "id": "cbea4597-10d2-49d7-9f5a-c33181fb0336",
-   "metadata": {},
-   "source": [
-    "# 🚀 Git Setup and Workflow Guide\n",
-    "\n",
-    "A step-by-step tutorial for setting up Git, creating a GitHub repo, managing code changes, handling data files, and documenting best practices.\n",
-    "\n",
-    "---\n",
-    "\n",
-    "## 🔧 Git Installation and Repository Setup\n",
-    "\n",
-    "### 1. Install Git\n",
-    "Download and install Git from [git-scm.com](https://git-scm.com)\n",
-    "\n",
-    "### 2. Create GitHub Repository\n",
-    "1. Go to [github.com](https://github.com)\n",
-    "2. Login or create a new account\n",
-    "3. Click **New Repository**\n",
-    "4. Name your repository\n",
-    "5. Add a brief description\n",
-    "6. Choose **Public**\n",
-    "7. Check **Add a README**\n",
-    "8. Add a `.gitignore` file and select **Python**\n",
-    "9. Choose a license (e.g., MIT, or based on your institution's policy)\n",
-    "10. Click **Create Repository**\n",
-    "\n",
-    "### 3. Clone Repository Locally\n",
-    "1. Copy the repository's **HTTPS URL**\n",
-    "2. On your local machine, create a working folder\n",
-    "3. Open a terminal (or use Jupyter Notebook > Launcher > Terminal)\n",
-    "4. Go to the created folder useful commands: (ls, cd, ..)\n",
-    "5. Configure your Git identity:\n",
-    "   ```bash\n",
-    "    git config --global user.email \"your_email@example.com\"\n",
-    "    ```\n",
-    "    \n",
-    "6. clone the repo to the current folder\n",
-    "   ```bash\n",
-    "    git clone https://github.com/yourusername/your-repo.git\n",
-    "    ```\n",
-    "    \n",
-    "7. Create a notebook, in our case 'train_test_lstm.ipynb'\n",
-    "8. Check status of the local repo in realtion to the online version\n",
-    "   ```bash\n",
-    "   git status\n",
-    "   ```\n",
-    "   \n",
-    "9. Add the notebook we've made to the next update\n",
-    "   ```bash\n",
-    "   git add train_test_lstm.ipynb\n",
-    "   ```\n",
-    "\n",
-    "10. Add comment to the commit\n",
-    "   ```bash\n",
-    "   git commit -m 'Initial script, main, notebook to start the project'\n",
-    "   ```\n",
-    "\n",
-    "11. Push the update to github - you might need to login to your github account.\n",
-    "   ```bash\n",
-    "   git push origin main\n",
-    "   ```\n",
-    "   \n",
-    "12. Note: if we come back after coworker has made changes, \n",
-    "   ```bash\n",
-    "   git pull\n",
-    "   ```\n",
-    "\n",
-    "\n",
-    "---\n",
-    "\n",
-    "## 📂 2. Import Data and Ignore It in Git\n",
-    "\n",
-    "1. Download data from [Zenodo](https://zenodo.org/records/15799719) or your data source and store it on your local machine.\n",
-    "2. Move the data file into your project folder (e.g., `data.csv`).\n",
-    "3. Exclude the data from version control using `.gitignore`:\n",
-    "   - Open `.gitignore` in a text editor (e.g., Notepad).\n",
-    "   - Add the following lines:\n",
-    "     ```plaintext\n",
-    "     # Ignore raw data\n",
-    "     ./data.csv\n",
-    "     ```\n",
-    "\n",
-    "4. Check if `.gitignore` has changed:\n",
-    "   ```bash\n",
-    "   git status\n",
-    "   ```\n",
-    "\n",
-    "5. Add the updated `.gitignore` file:\n",
-    "   ```bash\n",
-    "   git add .gitignore\n",
-    "   ```\n",
-    "\n",
-    "6. Commit the change:\n",
-    "   ```bash\n",
-    "   git commit -m \"chore(gitignore): Exclude raw data file from tracking\"\n",
-    "   ```\n",
-    "\n",
-    "7. Push to GitHub:\n",
-    "   ```bash\n",
-    "   git push origin main\n",
-    "   ```\n",
-    "\n",
-    "---\n",
-    "\n",
-    "## 🧪 3. Create `requirements.txt`\n",
-    "\n",
-    "\n",
-    "\n",
-    "\n"
-   ]
-  }
- ],
- "metadata": {
-  "kernelspec": {
-   "display_name": "Python 3 (ipykernel)",
-   "language": "python",
-   "name": "python3"
-  },
-  "language_info": {
-   "codemirror_mode": {
-    "name": "ipython",
-    "version": 3
-   },
-   "file_extension": ".py",
-   "mimetype": "text/x-python",
-   "name": "python",
-   "nbconvert_exporter": "python",
-   "pygments_lexer": "ipython3",
-   "version": "3.11.10"
-  }
- },
- "nbformat": 4,
- "nbformat_minor": 5
-}
+# 🚀 Git Setup and Workflow Guide
+
+A step-by-step tutorial for setting up Git, creating a GitHub repo, managing code changes, handling data files, and documenting best practices.
+
+---
+
+## 🔧 Git Installation and Repository Setup
+
+### 1. Install Git
+Download and install Git from [git-scm.com](https://git-scm.com)
+
+### 2. Create GitHub Repository
+1. Go to [github.com](https://github.com)
+2. Login or create a new account
+3. Click **New Repository**
+4. Name your repository
+5. Add a brief description
+6. Choose **Public**
+7. Check **Add a README**
+8. Add a `.gitignore` file and select **Python**
+9. Choose a license (e.g., MIT, or based on your institution's policy)
+10. Click **Create Repository**
+
+### 3. Clone Repository Locally
+1. Copy the repository's **HTTPS URL**
+2. On your local machine, create a working folder
+3. Open a terminal (or use Jupyter Notebook > Launcher > Terminal)
+4. Go to the created folder useful commands: (ls, cd, ..)
+5. Configure your Git identity:
+   ```bash
+    git config --global user.email "your_email@example.com"
+    ```
+    
+6. clone the repo to the current folder
+   ```bash
+    git clone https://github.com/yourusername/your-repo.git
+    ```
+    
+7. Create a notebook, in our case 'train_test_lstm.ipynb'
+8. Check status of the local repo in realtion to the online version
+   ```bash
+   git status
+   ```
+   
+9. Add the notebook we've made to the next update
+   ```bash
+   git add train_test_lstm.ipynb
+   ```
+
+10. Add comment to the commit
+   ```bash
+   git commit -m 'Initial script, main, notebook to start the project'
+   ```
+
+11. Push the update to github - you might need to login to your github account.
+   ```bash
+   git push origin main
+   ```
+   
+12. Note: if we come back after coworker has made changes, 
+   ```bash
+   git pull
+   ```
+
+
+
+### 📂 4. Import Data and Ignore It in Git
+
+1. Download data from [Zenodo](https://zenodo.org/records/15799719) or your data source and store it on your local machine.
+2. Move the data file into your project folder (e.g., `data.csv`).
+3. Exclude the data from version control using `.gitignore`:
+   - Open `.gitignore` in a text editor (e.g., Notepad).
+   - Add the following lines:
+     ```plaintext
+     # Ignore raw data
+     ./data.csv
+     ```
+
+4. Check if `.gitignore` has changed:
+   ```bash
+   git status
+   ```
+
+5. Add the updated `.gitignore` file:
+   ```bash
+   git add .gitignore
+   ```
+
+6. Commit the change:
+   ```bash
+   git commit -m "chore(gitignore): Exclude raw data file from tracking"
+   ```
+
+7. Push to GitHub:
+   ```bash
+   git push origin main
+   ```
+
+
+### 🧪 5. Create `requirements.txt`
+
+
+
+
