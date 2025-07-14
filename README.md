@@ -106,8 +106,23 @@ Download and install Git from [git-scm.com](https://git-scm.com)
    git push origin main
    ```
 
+## 🧪 5. Write your code:
+1. Write your code and upon each signifigant change push changes to github
+   
+3. Commands:
+   ```bash
+   git add 'filename'
+   ```
+   ```bash
+   git commit -m 'description of change'
+   ```
+   ```bash
+   git push origin main
+   ```
 
-## 🧪 5. Create `requirements.txt`
+4. 
+
+## 🧪 6. Create `requirements.txt`
 
 To capture your Python environment:
 
@@ -123,7 +138,7 @@ git push origin main
 ```
 
 
-## 🧠 6. Git Cheat Sheet
+## 🧠 7. Git Cheat Sheet
 
 | Action                    | Command                                 |
 |---------------------------|-----------------------------------------|
