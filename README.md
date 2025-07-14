@@ -106,10 +106,17 @@ Download and install Git from [git-scm.com](https://git-scm.com)
    git push origin main
    ```
 
-## 🧪 5. Write your code:
-1. Write your code and upon each signifigant change push changes to github
+## 🧪 5. Guidelines for proper code guidelines :
+
+1. Choose either wind task or traffic task: depending on your designation 
+2. Download the 'poorly written' code that we have provided
+3. Copy the code into your .ipynb
+4. Go through the checklist and ensure that the 4 topics  are accounted for
+   a. modularity (helper functions, common packages)
+   b. segmenting (environment - definition - preprocessing - model - plotting)
+   c. commenting (each line, code segments)
    
-3. Commands:
+6. Commands:
    ```bash
    git add 'filename'
    ```
@@ -120,7 +127,7 @@ Download and install Git from [git-scm.com](https://git-scm.com)
    git push origin main
    ```
 
-4. 
+7. 
 
 ## 🧪 6. Create `requirements.txt`
 
@@ -136,6 +143,8 @@ git add requirements.txt
 git commit -m "chore(deps): Add requirements.txt for reproducibility"
 git push origin main
 ```
+
+## 🧪 6. Create `readme.md`
 
 
 ## 🧠 7. Git Cheat Sheet
