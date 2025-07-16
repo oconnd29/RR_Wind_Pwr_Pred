@@ -127,8 +127,6 @@ Download and install Git from [git-scm.com](https://git-scm.com)
    git push origin main
    ```
 
-7. 
-
 ## 🧪 6. Create `requirements.txt`
 
 To capture your Python environment:
@@ -144,10 +142,10 @@ git commit -m "chore(deps): Add requirements.txt for reproducibility"
 git push origin main
 ```
 
-## 🧪 6. Create `readme.md`
+## 🧪 7. Create `readme.md`
 
 
-## 🧠 7. Git Cheat Sheet
+## 🧠 Git Cheat Sheet
 
 | Action                    | Command                                 |
 |---------------------------|-----------------------------------------|
