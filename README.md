@@ -106,9 +106,81 @@ Download and install Git from [git-scm.com](https://git-scm.com)
    git push origin main
    ```
 
+## 🧪 5. Guidelines for proper code guidelines :
 
-### 🧪 5. Create `requirements.txt`
+1. Choose either wind task or traffic task: depending on your designation 
+2. Download the 'poorly written' code that we have provided
+3. Copy the code into your .ipynb
+4. Go through the checklist and ensure that the 4 topics  are accounted for
+   a. modularity (helper functions, common packages)
+   b. segmenting (environment - definition - preprocessing - model - plotting)
+   c. commenting (each line, code segments)
+   
+6. Commands:
+   ```bash
+   git add 'filename'
+   ```
+   ```bash
+   git commit -m 'description of change'
+   ```
+   ```bash
+   git push origin main
+   ```
 
+## 🧪 6. Create `requirements.txt`
+
+To capture your Python environment:
+
+```bash
+pip freeze > requirements.txt
+```
+
+Then:
+```bash
+git add requirements.txt
+git commit -m "chore(deps): Add requirements.txt for reproducibility"
+git push origin main
+```
+
+## 🧪 7. Create `readme.md`
+
+
+## 🧠 Git Cheat Sheet
+
+| Action                    | Command                                 |
+|---------------------------|-----------------------------------------|
+| Clone repo                | `git clone <repo-url>`                  |
+| Check changes             | `git status`                            |
+| Stage a file              | `git add <filename>`                    |
+| Commit with message       | `git commit -m "msg"`                   |
+| Push to GitHub            | `git push origin <branch>`              |
+| Pull latest changes       | `git pull`                              |
+| Create new branch         | `git checkout -b <branch-name>`         |
+| Switch to existing branch | `git checkout <branch-name>`            |
+
+---
+
+## ✅ Commit Message Best Practices (Conventional Commits)
+
+Use structured commit messages:
+
+```bash
+type(scope): short description
+```
+
+**Examples:**
+```bash
+feat(data-cleaning): add outlier filtering
+fix(training): correct loss calculation
+```
+
+**Common Types:**
+- `feat`: new feature
+- `fix`: bug fix
+- `chore`: maintenance/dependencies
+- `docs`: documentation only
+- `refactor`: internal restructuring
+- `test`: testing code
 
 
 
