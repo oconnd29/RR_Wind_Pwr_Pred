@@ -4,7 +4,7 @@ Refactor the inline loops into a reusable create_windows() function
 2. Rename Functions and Variables for Clarity
 e.g., split() → time_split(), prep() → preprocess_data()
 
-2. Add Constants at the Top
+2. Add Constants at the Top - config.py
 e.g., WINDOW_SIZE, STEP_AHEAD, TARGET_COL instead of hardcoded values
 
 3. Use Type Hints
