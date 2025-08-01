@@ -43,6 +43,7 @@ pipreqs . --force
 | Clone repo                | `git clone <repo-url>`                  |
 | Check changes             | `git status`                            |
 | Stage a file              | `git add <filename>`                    |
+| Add all changed files     | `git add .`
 | Commit with message       | `git commit -m "msg"`                   |
 | Push to GitHub            | `git push origin <branch>`              |
 | Pull latest changes       | `git pull`                              |
