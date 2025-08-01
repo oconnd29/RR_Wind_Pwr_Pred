@@ -44,7 +44,7 @@ def load_data(path: str) -> pd.DataFrame:
 # Data Splitting
 # -------------------------------
 
-def time_split(df: pd.DataFrame) -> tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]:
+def time_split(df: pd.DataFrame,TRAIN_MONTHS, VALID_MONTHS) -> tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]:
     """
     Perform time-based train/valid/test split.
     """
