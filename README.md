@@ -6,20 +6,16 @@ Download the data required for the tutorial here:
 
 https://zenodo.org/records/15799719
 
-# Folder Structure
+
 ## 📁 Project Structure
-RR_Wind_Pwr_Pred/
-├── data/ # Raw or processed data
-├── saved_models/ # Trained models, scalers, hyperparameters
-├── notebooks/ # Jupyter notebooks (exploration, training, results)
-├── scripts/ # Python scripts for training, evaluation, etc.
-├── config.py # Global constants and configuration settings
-├── functions.py # Utility functions for data processing, modeling
-├── imports.py # Centralized import statements
-├── requirements.txt # List of Python dependencies
-├── README.md # Project overview and instructions
-├── LICENSE # Licensing information
-└── .gitignore # Files and folders to be ignored by Git
+- `data/`: Raw or processed input data
+- `saved_models/`: Trained models and scalers
+- `notebooks/`: Jupyter notebooks (exploration, training, etc.)
+- `scripts/`: Python scripts for modular code (e.g., training, plotting)
+- `config.py`: Central config (paths, hyperparams, etc.)
+- `functions.py`: Utility functions for loading, scaling, training
+- `imports.py`: Centralized shared imports
+
 
 ---
 
