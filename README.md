@@ -7,7 +7,18 @@ Download the data required for the tutorial here:
 https://zenodo.org/records/15799719
 
 # Folder Structure
-
+RR_Wind_Pwr_Pred/
+├── data/               # Raw or processed data (already exists)
+├── saved_models/       # Trained models, scalers, hyperparams (already exists)
+├── notebooks/          # Jupyter notebooks (move all *.ipynb here)
+├── scripts/            # Python scripts (e.g., training, plotting, inference)
+├── config.py           # Global constants / settings
+├── functions.py        # Utility functions (data prep, plotting, training)
+├── imports.py          # Shared imports
+├── requirements.txt    # Python dependencies
+├── README.md           # Project overview
+├── LICENSE             # Licensing
+└── .gitignore          # Ignored files/folders
 
 ---
 
