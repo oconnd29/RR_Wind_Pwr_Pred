@@ -47,18 +47,19 @@
             """
      ```
      ```python
-     def scale_series(train_df: pd.DataFrame,
+        def scale_series(train_df: pd.DataFrame,
                  valid_df: pd.DataFrame,
                  test_df: pd.DataFrame,
                  target_col: str
                  ) -> tuple[np.ndarray, np.ndarray, np.ndarray, MinMaxScaler]:
-             """
+            """
             Normalize target column using MinMaxScaler fitted on training data.
             """
      ```
 
 3. **Extract Repetitive Windowing Logic and Tensor Creation into a Function:**
    - Refactor the inline loops for window creation and tensor transformation into a reusable function:
+   - Create a `to_tensor` function to avoid repetition:
      ```python
     def create_windows(series: np.ndarray, window_size: int, step_ahead: int) -> tuple[np.ndarray, np.ndarray]:
         """
@@ -74,8 +75,6 @@
             y.append(series[i + window_size + step_ahead - 1])
         return np.array(X), np.array(y)
      ```
-
-   - Create a `to_tensor` function to avoid repetition:
      ```python
     def to_tensor(X: np.ndarray, y: np.ndarray):
         """
