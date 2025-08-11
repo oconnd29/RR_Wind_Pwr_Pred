@@ -6,7 +6,7 @@
 creat DATA_DIR in config.py
 
 os.makedirs(DATA_DIR, exist_ok=True)
-with open(f'{data_dir}/clean_prepped_dataset.pkl', 'wb') as f:
+with open(f'{data_dir}/clean_prepped_dataset.pkl', 'wb') as f: \n
     pickle.dump(clean_prepped_dataset, f)
 
 2. Add Constants at the Top - config.py
