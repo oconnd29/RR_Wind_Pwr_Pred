@@ -6,14 +6,34 @@ Download the data required for the tutorial here:
 
 https://zenodo.org/records/15799719
 
-# Folder Structure
 
+## 📁 Folder Structure
+- `data/`: Raw or processed input data
+- `saved_models/`: Trained models and scalers
+- `notebooks/`: Jupyter notebooks (exploration, training, etc.)
+- `scripts/`: Python scripts for modular code (e.g., training, plotting)
+- `config.py`: Central config (paths, hyperparams, etc.)
+- `functions.py`: Utility functions for loading, scaling, training
+- `imports.py`: Centralized shared imports
 
+## Project Description
+
+This project focuses on precision forecasting in wind power, where short-term predictions—such as 1-hour, 6-hour, or day-ahead estimates—are critical for energy markets and grid operators to support demand forecasting and energy sales.
+
+Objective:
+Predict the power output of a wind turbine for the next 10-minute interval using a window of historical data.
+
+Model:
+ A Long Short-Term Memory (LSTM) neural network designed to take a univariate time series input and forecast power production N steps ahead.
+
+Data:
+ 10-minute average power production data collected from a wind turbine located in the UK
+ 
 ---
 
-## 🧪 Guidelines for proper code guidelines :
+## 🧪 RR - Tutorial Overview :
 
-1. Choose either wind task or traffic task: depending on your designation 
+1. Choose either wind task or traffic task.
 2. Download the 'poorly written' code that we have provided
 3. Copy the code into your .ipynb
 4. Go through the checklist and ensure that the 4 topics  are accounted for
@@ -34,6 +54,8 @@ Then:
 ```bash
 pipreqs . --force
 ```
+
+## Create Readme
 
 
 ## 🧠 Git Cheat Sheet
