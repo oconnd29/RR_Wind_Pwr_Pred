@@ -86,37 +86,23 @@
 
 1. **Use Type Hints - Add Type Annotations to All Function Definitions:**
    - Add type annotations to function signatures for better clarity:
-     ```python
-     def preprocess_data(df: pd.DataFrame, WINDOW_SIZE: int, STEP_AHEAD: int) -> dict[str, tuple[torch.Tensor, torch.Tensor]]:
-         # Function logic
-         return result
-     ```
 
 2. **Make Docstring Descriptions of Functions:**
    - Document each function with a concise description of its purpose, parameters, and return values:
-     ```python
-     def load_data(file_path: str) -> pd.DataFrame:
-         """
-         Loads data from the given file path and returns a DataFrame.
-
-         Args:
-             file_path (str): Path to the data file.
-
-         Returns:
-             pd.DataFrame: Loaded data.
-         """
-         # Function logic
-     ```
 
 3. **Use Section Headers to Separate Logical Blocks:**
    - Organize the code with section headers to improve readability and structure:
      ```python
-     # -------------------- Data Loading --------------------
+      # ---------------------------------------------
+      # Load  Data
+      # ---------------------------------------------
+      df = load_data(DATA_PATH)
+      
+      # -------------------------------
+      # Main Processing Pipeline
+      # -------------------------------
      ```
 
-     ```python
-     # -------------------- Windowing --------------------
-     ```
 
 4. **Add Comments to Explain Non-Obvious Steps:**
    - Comment complex or non-intuitive logic, especially around window creation and indexing:
