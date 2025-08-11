@@ -7,7 +7,7 @@ Download the data required for the tutorial here:
 https://zenodo.org/records/15799719
 
 
-## 📁 Project Structure
+## 📁 Folder Structure
 - `data/`: Raw or processed input data
 - `saved_models/`: Trained models and scalers
 - `notebooks/`: Jupyter notebooks (exploration, training, etc.)
@@ -19,9 +19,9 @@ https://zenodo.org/records/15799719
 
 ---
 
-## 🧪 Guidelines for proper code guidelines :
+## 🧪 RR - Tutorial Overview :
 
-1. Choose either wind task or traffic task: depending on your designation 
+1. Choose either wind task or traffic task.
 2. Download the 'poorly written' code that we have provided
 3. Copy the code into your .ipynb
 4. Go through the checklist and ensure that the 4 topics  are accounted for
@@ -42,6 +42,8 @@ Then:
 ```bash
 pipreqs . --force
 ```
+
+## Create Readme
 
 
 ## 🧠 Git Cheat Sheet
