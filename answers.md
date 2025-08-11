@@ -59,21 +59,17 @@
 
 3. **Extract Repetitive Windowing Logic and Tensor Creation into a Function:**
    - Refactor the inline loops for window creation and tensor transformation into a reusable function:
-   - Create a `to_tensor` function to avoid repetition:
-     ```python
-    def create_windows(series: np.ndarray, window_size: int, step_ahead: int) -> tuple[np.ndarray, np.ndarray]:
-        """
-        Convert a time series into sliding windows.
-    
-        Returns:
-            X (np.ndarray): Shape (samples, window_size, 1)
-            y (np.ndarray): Shape (samples, 1)
-        """
-        X, y = [], []
-        for i in range(len(series) - window_size - step_ahead + 1):
-            X.append(series[i:i + window_size])
-            y.append(series[i + window_size + step_ahead - 1])
-        return np.array(X), np.array(y)
+   
+   ```python
+   def create_windows(series: np.ndarray, window_size: int, step_ahead: int) -> tuple[np.ndarray, np.ndarray]:
+       """
+       Convert a time series into sliding windows.
+       """
+       X, y = [], []
+       for i in range(len(series) - window_size - step_ahead + 1):
+           X.append(series[i:i + window_size])  # Create input window
+           y.append(series[i + window_size + step_ahead - 1])  # Target value based on step_ahead
+       return np.array(X), np.array(y)
      ```
      ```python
     def to_tensor(X: np.ndarray, y: np.ndarray):
