@@ -58,7 +58,8 @@
      ```
 
 3. **Extract Repetitive Windowing Logic and Tensor Creation into a Function:**
-   - Refactor the inline loops for window creation and tensor transformation into a reusable function:
+   - Refactor the inline loops for window creation and tensor transformation into a reusable function: `create_windows()`:
+   - Create `to_tensor` Function
    
    ```python
    def create_windows(series: np.ndarray, window_size: int, step_ahead: int) -> tuple[np.ndarray, np.ndarray]:
